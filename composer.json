@@ -1,0 +1,16 @@
+{
+    "name": "jorge/funciones-fecha-hora",
+    "description": "ejercicios de funciones de hora y fechas",
+    "authors": [
+        {
+            "name": "jorge mochon bernal",
+            "email": "bernalmochonjorge@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "./clases"
+        }
+    }
+}
