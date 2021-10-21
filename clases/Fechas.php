@@ -12,4 +12,9 @@ class Fechas
         $timestamp = $fecha->getTimestamp();
         return date('d M Y H:i:s Z', $timestamp);
     }
+
+    public function obtenerFechaActual() {
+        $fechaActual = getDate();
+        return $fechaActual;
+    }
 }
