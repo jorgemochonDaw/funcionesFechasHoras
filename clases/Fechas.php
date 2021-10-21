@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+
 use DateTime;
 
 class Fechas
@@ -8,6 +9,7 @@ class Fechas
     public function obtenerTimestamp()
     {
         $fecha = new DateTime();
-        return $fecha->getTimestamp();
+        $timestamp = $fecha->getTimestamp();
+        return date('d M Y H:i:s Z', $timestamp);
     }
 }

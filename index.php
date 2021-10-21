@@ -8,7 +8,9 @@
 </head>
 <body>
     <?php
-        $fechaServidor->Fechas();
+        require './vendor/autoload.php';
+        use App\Fechas;
+        $fechaServidor = new Fechas();
     ?>
     <main>
         <section>
