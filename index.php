@@ -34,7 +34,7 @@
                         <?php
                         foreach (array_keys($fechas->obtenerFechaActual()) as $keys) {
                         ?>
-                            <th><?php echo $keys?></th>
+                            <th><?php echo $keys ?></th>
                         <?php
                         }
                         ?>
@@ -46,7 +46,7 @@
                         <?php
                         foreach (array_values($fechas->obtenerFechaActual()) as $valores) {
                         ?>
-                            <td><?php echo $valores?></td>
+                            <td><?php echo $valores ?></td>
                         <?php
                         }
                         ?>
@@ -54,6 +54,56 @@
                 </tbody>
                 </tbody>
             </table>
+        </section>
+        <hr>
+        <section>
+            <h2>Fecha de nacimiento, (formato => "2000-09-22" ): </h2>
+            <p>
+                <?php
+                //Formato "2000-09-22""2000-09-22"
+                echo $fechas->edadPersona("2000-09-22");
+                ?>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Marca de tiempo de 30 de julio de 2013 a las 23:15: </h2>
+            <p>
+                <?php
+                //Formato "2000-09-22""2000-09-22"
+                echo $fechas->marcaTiempo();
+                ?>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Obtener hora actual GMT</h2>
+            <p>
+                <?php
+                //Formato "2000-09-22""2000-09-22"
+                echo $fechas->obtenerGMT();
+                ?>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Verificar fechas: </h2>
+            <p>
+                <?php
+                //Formato "2000-09-22""2000-09-22"
+                echo $fechas->verificarDate();
+                ?>
+            </p>
+        </section>
+        <hr>
+        ection>
+            <h2>Verificar fechas: </h2>
+            <p>
+                <?php
+                //Formato "2000-09-22""2000-09-22"
+                var_dump($fechas->contarMinutosSegundosVivo());
+                ?>
+            </p>
         </section>
     </main>
 </body>
